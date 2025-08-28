@@ -316,39 +316,61 @@ footer .social a:hover {
 .card p {
     margin-top: 16px;
 }
-/* Ajustes para telas menores que 768px (celulares) */
 @media (max-width: 768px) {
-    .hero, #sobre-mim, #contato, #profissional, #skill {
-        padding: 4rem 2rem; /* reduz o padding */
-    }
-
-    .contato h3 {
-        width: 90%; /* ocupa quase toda a tela */
-        text-align: center; /* centraliza o texto */
-    }
-
-    .container-sobre {
-        width: 100%; /* ocupa a tela toda */
-        font-size: 18px; /* reduz um pouco a fonte */
+    nav {
+        flex-direction: column;
+        padding: 20px;
     }
 
     nav ul {
-        flex-direction: column; /* links empilhados */
-        align-items: center; /* centraliza links */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         gap: 12px;
     }
 
-    nav ul li {
-        padding: 8px 0; /* reduz espaçamento */
+    .btn {
+        margin-top: 15px;
     }
 
-    .skills-container {
-        grid-template-columns: 1fr; /* uma skill por linha */
-        gap: 12px;
+    h1 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .contato h3 {
+        width: 90%;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .newslatter form {
+        flex-direction: column;
+    }
+
+    #sobre-mim,
+    #contato,
+    #profissional,
+    #skill {
+        padding: 4rem 2rem;
+    }
+
+    .container-sobre,
+    #sobre-mim p,
+    #contato p,
+    .contato-container {
+        width: 100%;
+        max-width: 90%;
+        font-size: 18px;
     }
 
     .contato-container {
-        width: 100%; /* ocupa a tela toda */
-        grid-template-columns: 1fr; /* centraliza os links */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
     }
 }
