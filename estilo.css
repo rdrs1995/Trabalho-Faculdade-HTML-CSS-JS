@@ -317,47 +317,58 @@ footer .social a:hover {
     margin-top: 16px;
 }
 @media (max-width: 768px) {
-    /* Nav centralizado sem quebrar */
+    /* Nav centralizado */
     nav {
-        padding: 20px;
+        padding: 15px;
     }
 
     nav ul {
         display: flex;
-        flex-wrap: wrap; /* permite quebrar linhas se necessário */
-        justify-content: center; /* centraliza horizontal */
-        gap: 12px;
+        flex-direction: column; /* coluna evita quebra */
+        align-items: center;
+        gap: 10px;
         padding: 0;
         margin: 0;
     }
 
     nav ul li {
-        padding: 8px 12px; /* reduz espaçamento */
+        padding: 6px 10px; /* espaçamento menor */
     }
 
     .btn {
-        margin-top: 15px;
+        margin-top: 12px;
+        width: 100%;
+        max-width: 200px;
     }
 
-    /* Hero centralizado */
-    .contato {
+    /* Hero e títulos centralizados */
+    h1, h2, h3 {
         text-align: center;
-    }
-
-    .contato h3 {
         width: 90%;
-        font-size: 16px;
-        margin: 0 auto 20px auto;
+        margin: 0 auto 15px auto;
     }
 
     h1 {
-        font-size: 36px;
-        text-align: center;
+        font-size: 28px; /* reduz um pouco */
     }
 
+    h3 {
+        font-size: 16px;
+    }
+
+    /* Formulário responsivo */
     .newslatter form {
+        display: flex;
         flex-direction: column;
         gap: 10px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .newslatter input,
+    .newslatter input[type="submit"] {
+        width: 100%;
+        box-sizing: border-box;
     }
 
     /* Sections padding menor */
@@ -365,13 +376,13 @@ footer .social a:hover {
     #contato,
     #profissional,
     #skill {
-        padding: 4rem 2rem;
+        padding: 2rem 1rem;
     }
 
     .container-sobre {
-        width: 100%;
-        max-width: 600px; /* melhor ajuste para celular */
-        font-size: 18px;
+        width: 90%;
+        max-width: 500px;
+        font-size: 16px;
         margin: 0 auto;
     }
 
@@ -379,15 +390,17 @@ footer .social a:hover {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 12px;
-        width: 100%;
+        gap: 10px;
+        width: 90%;
         max-width: 300px;
         margin: 0 auto;
     }
 
     .skills-container {
+        display: grid;
         grid-template-columns: 1fr; /* 1 skill por linha */
-        gap: 12px;
+        gap: 10px;
+        width: 90%;
         max-width: 300px;
         margin: 0 auto;
     }
