@@ -143,12 +143,25 @@ h4 {
 }
 
 #sobre-mim {
-    padding: 20rem 10rem;
-    background-color: #16181D;
+    padding: 10rem 10rem;
+    background-color: #20232A;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.container-sobre {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    align-items: center;
+    gap: 24px;
+    color: white;
+    width: 800px;
+    font-size: 24px;
 }
 
 #sobre-mim p {
@@ -162,12 +175,17 @@ h4 {
 }
 
 #contato {
-    padding: 20rem 10rem;
+    padding: 10rem 10rem;
     background-color: #16181D;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.logo {
+    width: 25px;
+    color: white;
 }
 
 #contato p {
@@ -189,7 +207,11 @@ h4 {
 }
 
 .contato-container a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
+    gap: 16px;
 }
 
 #profissional {
