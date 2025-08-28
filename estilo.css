@@ -316,3 +316,61 @@ footer .social a:hover {
 .card p {
     margin-top: 16px;
 }
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .btn {
+        margin-top: 15px;
+    }
+
+    h1 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .contato h3 {
+        width: 90%;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .newslatter form {
+        flex-direction: column;
+    }
+
+    #sobre-mim,
+    #contato,
+    #profissional,
+    #skill {
+        padding: 4rem 2rem;
+    }
+
+    .container-sobre,
+    #sobre-mim p,
+    #contato p,
+    .contato-container {
+        width: 100%;
+        max-width: 90%;
+        font-size: 18px;
+    }
+
+    .contato-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+}
