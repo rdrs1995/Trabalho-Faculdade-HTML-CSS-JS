@@ -316,6 +316,13 @@ footer .social a:hover {
 .card p {
     margin-top: 16px;
 }
+/* RESETAR MARGENS E LARGURA TOTAL */
+html, body {
+    width: 100%;
+    overflow-x: hidden; /* evita scroll horizontal */
+    margin: 0;
+    padding: 0;
+}
 @media (max-width: 768px) {
 
     /* NAV */
