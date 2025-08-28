@@ -312,3 +312,7 @@ footer .social a {
 footer .social a:hover {
     text-decoration: underline;
 }
+
+.card p {
+    margin-top: 16px;
+}
