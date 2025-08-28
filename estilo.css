@@ -1,0 +1,292 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+.hero {
+    height: 100vh;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.logo {
+    color: #E2E4E9;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+span {
+    color: #E3646E;
+}
+
+nav {
+    background-color: #16181D;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+nav ul li a {
+    color: #E2E4E9;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+nav ul li a:hover {
+    color: #E3646E;
+    transition: 0.4s;
+}
+
+.btn {
+    background-color: #E3646E;
+    color: #E2E4E9;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform .4s;
+}
+
+.btn:hover {
+    transform: scale(1.2);
+}
+
+.contato {
+    background-image: url('Intro.png');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.name {
+    color: #E3646E;
+}
+
+.contato h3 {
+    font-size: 20px;
+    font-weight: 200;
+    text-align: justify;
+    width: 50%;
+}
+
+.contato h1,
+.contato h4,
+.contato h3 {
+    color: #E2E4E9;
+    font-family: "Courier New", Courier, monospace;
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+    margin: 20px 0px 20px;
+    font-size: 75px
+}
+
+h3 {
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+h4 {
+    color: rgba(3, 3, 3, 0.8);
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+.newslatter form {
+    margin-top: 48px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.newslatter .email {
+    padding: 12px 15px;
+    border: 2px solid #ccc;
+    border-radius: 30px;
+    font-size: 16px;
+    height: 42px;
+    width: 250px;
+}
+
+.newslatter .submit {
+    background-color: #E3646E;
+    color: #E2E4E9;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+#sobre-mim {
+    padding: 20rem 10rem;
+    background-color: #16181D;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#sobre-mim p {
+    color: #E2E4E9;
+    width: 1200px;
+    text-align: justify;
+}
+
+#sobre-mim h1 {
+    color: #E2E4E9;
+}
+
+#contato {
+    padding: 20rem 10rem;
+    background-color: #16181D;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contato p {
+    color: #E2E4E9;
+    width: 1200px;
+    text-align: justify;
+}
+
+#contato h1 {
+    color: #E2E4E9;
+}
+
+.contato-container {
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    width: 400px;
+}
+
+.contato-container a {
+    text-decoration: none;
+}
+
+#profissional {
+    padding: 10rem 10rem;
+    background-color: #20232A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#profissional h1 {
+    color: #E2E4E9;
+    margin-bottom: 3rem;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 900px;
+}
+
+.timeline .card {
+    background: #16181D;
+    color: #E2E4E9;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+}
+
+.timeline .card h2 {
+    color: #E3646E;
+    margin-bottom: .5rem;
+}
+
+.timeline .card span {
+    font-size: 14px;
+    color: #aaa;
+}
+
+#skill {
+    padding: 10rem 10rem;
+    background-color: #16181D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#skill h1 {
+    color: #E2E4E9;
+    margin-bottom: 3rem;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.5rem;
+    max-width: 900px;
+    width: 100%;
+}
+
+.skills-container div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill {
+    background: #20232A;
+    color: #E2E4E9;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+
+.skill:hover {
+    transform: scale(1.1);
+    background-color: #E3646E;
+    color: #fff;
+}
+
+footer {
+    background: #101114;
+    padding: 2rem;
+    text-align: center;
+    color: #E2E4E9;
+}
+
+footer .social a {
+    color: #E3646E;
+    text-decoration: none;
+    margin: 0 8px;
+    font-weight: bold;
+}
+
+footer .social a:hover {
+    text-decoration: underline;
+}
