@@ -316,61 +316,39 @@ footer .social a:hover {
 .card p {
     margin-top: 16px;
 }
+/* Ajustes para telas menores que 768px (celulares) */
 @media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        padding: 20px;
-    }
-
-    nav ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 12px;
-    }
-
-    .btn {
-        margin-top: 15px;
-    }
-
-    h1 {
-        font-size: 36px;
-        text-align: center;
+    .hero, #sobre-mim, #contato, #profissional, #skill {
+        padding: 4rem 2rem; /* reduz o padding */
     }
 
     .contato h3 {
-        width: 90%;
-        font-size: 16px;
-        text-align: center;
+        width: 90%; /* ocupa quase toda a tela */
+        text-align: center; /* centraliza o texto */
     }
 
-    .newslatter form {
-        flex-direction: column;
+    .container-sobre {
+        width: 100%; /* ocupa a tela toda */
+        font-size: 18px; /* reduz um pouco a fonte */
     }
 
-    #sobre-mim,
-    #contato,
-    #profissional,
-    #skill {
-        padding: 4rem 2rem;
+    nav ul {
+        flex-direction: column; /* links empilhados */
+        align-items: center; /* centraliza links */
+        gap: 12px;
     }
 
-    .container-sobre,
-    #sobre-mim p,
-    #contato p,
-    .contato-container {
-        width: 100%;
-        max-width: 90%;
-        font-size: 18px;
-    }
-
-    .contato-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    nav ul li {
+        padding: 8px 0; /* reduz espaçamento */
     }
 
     .skills-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* uma skill por linha */
+        gap: 12px;
+    }
+
+    .contato-container {
+        width: 100%; /* ocupa a tela toda */
+        grid-template-columns: 1fr; /* centraliza os links */
     }
 }
